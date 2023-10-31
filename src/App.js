@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Home from './pages/Home'
+import Heading from './components/Heading'
+import MobileSearch from './components/MobileSearch'
+import {Routes,Route} from 'react-router-dom';
+import NewsDetails from './pages/NewsDetails';
+import Search from './pages/Search';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     <Heading />
+     <div className='bg'>
+     <MobileSearch />
+     <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/search' element={<Search />} />
+      <Route path='/news/:id' element={<NewsDetails />} />
+      </Routes> 
+     </div>
+     
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

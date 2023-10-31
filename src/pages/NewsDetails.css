@@ -1,0 +1,96 @@
+.details{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 30px;
+    border-radius: 20px;
+    margin-top: 20px;
+    animation: down 0.5s ease-in-out forwards;
+    transition: all 0.3s;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    min-width: 500px;
+}
+@keyframes down{
+    0%{
+        transform: translateY(-4%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.imgd{
+    width: 400px;
+}
+
+.h11d{
+    font-size: 24px;
+    font-weight: 500;
+    padding-top: 6px;
+}
+
+.has{
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.tg{
+    color: blue;
+    
+}
+.tgh{
+    color: rgb(255, 126, 13);
+    
+}
+.tgs{
+    color: rgb(182, 13, 255);
+    
+}
+
+.bckMain{
+    display: flex;
+    width: 100%;
+}
+.bck{
+   align-self: flex-start;
+   color: rgb(106, 106, 106);
+   transition: all 0.3s;
+   cursor: pointer;
+}
+
+.bck:hover{
+    letter-spacing: 0.3px;
+    color: blueviolet;
+}
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    .details{
+        width: 90%;
+        min-width: 250px;
+    }
+    .imgd{
+        width: 240px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bckMain{
+        display: flex;
+        width: 90%;
+    }
+
+    .h11d{
+        font-size: 21px;
+        font-weight: 500;
+        padding-top: 6px;
+    }
+}

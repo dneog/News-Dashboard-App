@@ -1,0 +1,27 @@
+.searchResult{
+   
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+
+}
+.sres1{
+    color: rgb(125, 38, 207);
+    font-weight: 500;
+}
+
+.home2{
+     margin-top: 90px;
+
+}
+
+
+@media screen and (max-width: 750px) {
+
+    .home2{
+        margin-top: 15px;
+        
+    }
+}

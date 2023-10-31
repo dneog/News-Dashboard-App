@@ -1,0 +1,117 @@
+.card{
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    width: 63%;
+    margin: 13px;
+    padding: 18px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    animation: down 0.5s ease-in-out forwards;
+    transition: all 0.3s;
+   
+}
+@keyframes down{
+    0%{
+        transform: translateY(-6%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.i1{
+    width: 160px;
+    margin-right: 30px;
+}
+.nicon{
+    width: 100%;
+    min-width: 140px;
+   
+}
+
+.h11{
+    font-size: 24px;
+    font-weight: 500;
+
+}
+
+.tag{
+    margin-top: -1px;
+    color: rgb(8, 8, 182);
+    font-size: 15px;
+    margin-bottom: 4px;
+    display: flex;
+    gap: 10px;
+}
+
+.but{
+    padding: 2px 8px;
+    font-size: 14px;
+    margin-top: 4px;
+    cursor: pointer;
+    background: #ffffff;
+    border: 1px solid rgb(54, 10, 142);
+    transition: all 0.3s;
+}
+.but:hover{
+    background: rgb(127, 63, 255);
+    color: white;
+    
+}
+.category{
+    color: white;
+    background: #edaf11;
+    border-radius: 4px;
+    padding: 0px 6px;
+    font-weight: 500;
+    
+}
+
+.pub{
+    font-size: 15px;
+    margin-top: 3px;
+}
+.pub2{
+    font-size: 15px;
+    margin-top: -1px;
+}
+
+.g{
+    font-weight: 500;
+    color: blue;
+    font-size: 15px;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .card{
+        
+        width: 94%;
+      
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .card{
+        flex-wrap: wrap;
+        width: 94%;
+       
+    }
+    .nicon{
+        width: 50%;
+        min-width: 100px;
+       
+    }
+    .h11{
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 4px;
+    
+    }
+}
